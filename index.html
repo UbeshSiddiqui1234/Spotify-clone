@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="upper">
+                <img class="close invert" src="close.svg" alt="">
+                <ul>
+                    <li><img class="invert" src="logo.svg" alt=""></li>
+                    <li><img class="invert" src="home.svg" alt="">Home</li>
+                    <li><img class="invert" src="search.svg" alt="">Search</li>
+                </ul>
+            </div>
+            <div class="lower">
+                <div class="library">
+                    <div class="box">
+                        <div class="text"><img class="invert" src="library.svg" alt=""> Your library</div>
+                        <div><img class="invert" src="plus.svg" alt=""></div>
+                        <div><img class="invert" src="arrow.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="subs">
+                    <div class="songList">
+
+                        <ul>
+    
+                        </ul>
+                    </div>
+    
+                    <div class="sub-box">
+                        <h3>Create first playlist</h3>
+                        <p>It's easy,we'll help you</p>
+                        <button class="bolder">Create playlist</button>
+                    </div>
+                    <div class="sub-box">
+                        <h3>Let's find some podcast to follow</h3>
+                        <p>We'll keep you updated on new episodes</p>
+                        <button class="bolder">Browse podcast</button>
+                    </div>
+                </div>
+                <div class="linkbox">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety &amp; Privacy Center</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="right">
+
+            <div class="header">
+                <div class="arrows">
+                    <div><img class="hamburger invert" src="hamburger.svg" alt=""></div>
+                    <div class="cont"><img clas="invert" src="leftarrow.svg" alt=""> </div>
+                    <div class="cont"><img clas="invert" src="rightarrow.svg" alt=""> </div>
+                </div>
+                <div class="buttons">
+                    <button class="invert bolder">SignUp</button>
+                    <button class="bolder">Log in</button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="new invisible">
+                    <div><img src="https://i.scdn.co/image/ab67706f0000000255be59b7be2929112e7ac927" alt=""></div>
+                    <p>song name</p>
+                </div>
+
+
+                <!-- <h1>Spotify playlist</h1>
+                <div id="cardContainer" class="cardContainer"> -->
+                    <!-- <div class="card">
+                        <img src="https://i.scdn.co/image/ab67706f0000000255be59b7be2929112e7ac927" alt="">
+                        <div class="play-btn">
+                            <img src="play-button-svgrepo-com.svg" alt="">
+                        </div>
+                        <h7>lofi beats</h7>
+                        <p class="grey">chill beats, lofi vibes ,chill tracks every week..</p>
+                    </div> -->
+                <!-- </div> -->
+                <!-- <div class="cardContainer" id="cardContainer"></div> -->
+            </div>
+            <div class="playbar">
+                <div class="mainbar">
+                    <div class="songinfo">
+                        Song name
+                    </div>
+                    <div class="controls">
+                        <img class="invert" id ="up" src="up.svg" alt="">
+                        <img class="invert" id="previous" src="prev.svg" alt="">
+                        <img class="invert" id="play" src="play-btn2.svg" alt="">
+                        <img class="invert" id="next" src="next.svg" alt="">
+                        <img class="invert" id ="size" src="expand.svg" alt="">
+                    </div>
+                    <div class="volDur">
+                        <div class="sDuration">
+                            00:00/0:00
+                        </div>
+                        <div class="vol">
+                            <img class="invert" id="vol" src="volume.svg" alt="">
+                            <input type="range" min="0" max="100" value="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
