@@ -69,7 +69,7 @@ async function displayAlbums() {
     for (let i = 0; i < folders.length; i++) {
         let temp = document.getElementsByClassName("main")[0].innerHTML;
 
-        let info = await fetch(`/songs/${folders[i]}/info.json`);
+        let info = await fetch(`https://ubeshsiddiqui1234.github.io/Spotify-clone/songs/${folders[i]}/info.json`);
         info = await info.json();
 
 
