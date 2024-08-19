@@ -1,6 +1,6 @@
 let songs;
 let audio = new Audio();
-let currfolder = "https://ubeshsiddiqui1234.github.io/Spotify-clone/songs/songs1";
+let currfolder = "/songs/songs1";
 let cardCont ;
 
 async function getSongs(currfolder) {
@@ -51,7 +51,7 @@ function convertSecondsToMinutes(seconds) {
 }
 
 async function displayAlbums() {
-    let x = await fetch(`https://ubeshsiddiqui1234.github.io/Spotify-clone/songs/`);
+    let x = await fetch(`/songs/`);
     let response = await x.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -69,7 +69,7 @@ async function displayAlbums() {
     for (let i = 0; i < folders.length; i++) {
         let temp = document.getElementsByClassName("main")[0].innerHTML;
 
-        let info = await fetch(`https://ubeshsiddiqui1234.github.io/Spotify-clone/songs/${folders[i]}/info.json`);
+        let info = await fetch(`/${folders[i]}/info.json`);
         info = await info.json();
 
 
@@ -106,7 +106,6 @@ async function displayAlbums() {
                 document.getElementsByClassName("cardContainer")[i].innerHTML = temp;
             }
         }
-
     }
 
     cardCont = document.getElementsByClassName("cardContainer")[0];
@@ -154,7 +153,7 @@ async function displayAlbums() {
 
 
 async function main() {
-    songs = await getSongs("https://ubeshsiddiqui1234.github.io/Spotify-clone/songs/songs1");
+    songs = await getSongs("/songs/songs1");
 
     await displayAlbums();
 
