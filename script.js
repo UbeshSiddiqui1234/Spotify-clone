@@ -1,6 +1,6 @@
 let songs;
 let audio = new Audio();
-let currfolder = "/songs/songs1";
+let currfolder = "songs/songs1";
 let cardCont ;
 
 async function getSongs(currfolder) {
@@ -69,9 +69,8 @@ async function displayAlbums() {
     for (let i = 0; i < folders.length; i++) {
         let temp = document.getElementsByClassName("main")[0].innerHTML;
 
-        let info = await fetch(`/${folders[i]}/info.json`);
+        let info = await fetch(`/songs/${folders[i]}/info.json`);
         info = await info.json();
-
 
         temp += `<h1>${info.description}</h1>
             <div id="cardContainer" class="cardContainer"></div>`
@@ -86,7 +85,7 @@ async function displayAlbums() {
 
         for (let j = 0; j < coolsSongs.length; j++) {
             if (coolsSongs[j].href.endsWith(".jpeg")) {
-                image = coolsSongs[j].href
+                image = coolsSongs[j].href;
             }
         }
 
@@ -153,7 +152,7 @@ async function displayAlbums() {
 
 
 async function main() {
-    songs = await getSongs("/songs/songs1");
+    songs = await getSongs("songs/songs1");
 
     await displayAlbums();
 
