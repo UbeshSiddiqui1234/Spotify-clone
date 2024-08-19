@@ -6,7 +6,7 @@ let cardCont ;
 async function getSongs(currfolder) {
     //currfolder = folder
     
-    let x = await fetch(`/${currfolder}/`);
+    let x = await fetch(`${currfolder}`);
     let response = await x.text();
     let div = document.createElement("div");
     div.innerHTML = response;
